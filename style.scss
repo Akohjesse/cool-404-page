@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Erica+One&family=Unbounded:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  background-color: rgba(0, 0, 0, 0.979);
+  background-image: url(https://framerusercontent.com/images/rR6HYXBrMmX4cRpXfXUOvpvpB0.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  header {
+    width: 95%;
+    position: relative;
+    margin: 0 auto;
+    z-index: 2;
+    font-family: "Unbounded";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    p {
+      font-size: 0.9rem;
+      color: white;
+    }
+  }
+  .bulb {
+    position: absolute;
+    z-index: 1;
+    left: 45%;
+    &_stick {
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.4) 0%,
+        hsl(0, 0%, 100%) 100%
+      );
+      flex: none;
+      height: 100px;
+      opacity: 0.4;
+      overflow: hidden;
+      position: absolute;
+      top: -100%;
+      left: 2rem;
+      width: 3px;
+    }
+    &_bulb {
+      border-radius: 100px;
+      box-shadow: 0 30px 100px #fff;
+      flex: none;
+      height: 73px;
+      overflow: hidden;
+      position: relative;
+      width: 70px;
+      will-change: transform;
+      &_proj {
+        -webkit-filter: brightness(1.34) hue-rotate(218deg);
+        filter: brightness(1.34) hue-rotate(218deg);
+        flex: none;
+        inset: -43px -46px;
+        overflow: visible;
+        position: absolute;
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          border-radius: inherit;
+        }
+      }
+    }
+  }
+  .gif {
+    width: 80%;
+    -webkit-filter: blur(11px);
+    aspect-ratio: 1 / 1;
+    filter: blur(11px);
+    flex: none;
+    overflow: visible;
+    position: absolute;
+    left: 9%;
+    top: 0%;
+    margin: 0 auto;
+    z-index: 0;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .color {
+      background: radial-gradient(
+        50% 50% at 50% 50%,
+        rgba(194, 102, 255, 0.85) 0%,
+        rgba(171, 171, 171, 0) 100%
+      );
+      height: 800px;
+      left: 0;
+      overflow: hidden;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+  .anime {
+    position: absolute;
+    left: 28%;
+    top: 5%;
+    .loader {
+      position: relative;
+      width: 600px;
+      height: 600px;
+      transform-style: preserve-3d;
+      transform: perspective(400px) rotateX(60deg);
+    }
+    .loader span {
+      position: absolute;
+      display: block;
+      border: 5px solid rgba(194, 102, 255, 0.85);
+      box-shadow: 0 5px 0 rgb(0, 0, 0), inset 0 5px 0 #9deaf1;
+      box-sizing: border-box;
+      border-radius: 50%;
+      animation: animate 3s ease-in-out infinite;
+    }
+
+    .loader span:nth-child(1) {
+      top: 0;
+      left: 0px;
+      bottom: 0px;
+      right: 0;
+
+      animation-delay: 1.4s;
+    }
+    .loader span:nth-child(2) {
+      top: 10px;
+      left: 10px;
+      bottom: 10px;
+      right: 10px;
+      animation-delay: 1.2s;
+    }
+    .loader span:nth-child(3) {
+      top: 20px;
+      left: 20px;
+      bottom: 20px;
+      right: 20px;
+      animation-delay: 1s;
+    }
+    .loader span:nth-child(4) {
+      top: 30px;
+      left: 30px;
+      bottom: 30px;
+      right: 30px;
+      animation-delay: 0.9s;
+    }
+    .loader span:nth-child(5) {
+      top: 40px;
+      left: 40px;
+      bottom: 40px;
+      right: 40px;
+      animation-delay: 0.8s;
+    }
+    .loader span:nth-child(6) {
+      top: 50px;
+      left: 50px;
+      bottom: 50px;
+      right: 50px;
+      animation-delay: 0.7s;
+    }
+    .loader span:nth-child(7) {
+      top: 60px;
+      left: 60px;
+      bottom: 60px;
+      right: 60px;
+      animation-delay: 0.6s;
+    }
+    .loader span:nth-child(8) {
+      top: 70px;
+      left: 70px;
+      bottom: 70px;
+      right: 70px;
+      animation-delay: 0.5s;
+    }
+    .loader span:nth-child(9) {
+      top: 80px;
+      left: 80px;
+      bottom: 80px;
+      right: 80px;
+      animation-delay: 0.4s;
+    }
+    .loader span:nth-child(10) {
+      top: 90px;
+      left: 90px;
+      bottom: 90px;
+      right: 90px;
+      animation-delay: 0.3s;
+    }
+    .loader span:nth-child(11) {
+      top: 100px;
+      left: 100px;
+      bottom: 100px;
+      right: 100px;
+      animation-delay: 0.2s;
+    }
+    .loader span:nth-child(12) {
+      top: 110px;
+      left: 110px;
+      bottom: 110px;
+      right: 110px;
+      animation-delay: 0.1s;
+    }
+    .loader span:nth-child(13) {
+      top: 120px;
+      left: 120px;
+      bottom: 120px;
+      right: 120px;
+      animation-delay: 0s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: black;
+      h1 {
+        color: white;
+        font-size: 6em;
+        font-family: "Unbounded";
+        font-size: 900;
+      }
+    }
+  }
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    transform: translateZ(-120px);
+  }
+  50% {
+    transform: translateZ(120px);
+  }
+}
